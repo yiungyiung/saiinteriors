@@ -1,4 +1,5 @@
 import React from "react";
+import Botnav from "../components/BotNav"
 import {
   AppBar,
   Box,
@@ -98,6 +99,9 @@ function Home() {
           </Grid>
         ))}
       </Grid>
+      <Box sx={{ marginTop: "auto" }}>
+        <Botnav />
+      </Box>
     </>
   );
 }

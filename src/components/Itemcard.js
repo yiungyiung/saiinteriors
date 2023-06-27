@@ -13,6 +13,7 @@ import {
   Toolbar,
 } from "@mui/material";
 import img from "../Images/plast.jpg";
+import "./Img.css"
 function Itemcard(props) {
   const [screenSize, setScreenSize] = useState(30);
   useEffect(() => {
@@ -44,7 +45,7 @@ function Itemcard(props) {
             padding: "0.1rem",
             display: "flex",
             flexDirection: "column",
-            backgroundColor: "#dfe4e2",
+            backgroundColor: "#231c14",
             position: "relative",
             alignItems: "center",
             justifyContent: "center",
@@ -62,6 +63,7 @@ function Itemcard(props) {
             > 
             <a href={props.link}>
               <img
+              className="img"
                 style={{
                   borderRadius: "0.8rem",
                   width: `${props.sz / screenSize}em`,

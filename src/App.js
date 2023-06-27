@@ -44,9 +44,7 @@ function App() {
         </BrowserRouter>
       </Box>
       
-      <Box sx={{ marginTop: "auto" }}>
-        <BotNav />
-      </Box>
+
     </Box>
   );
 }

@@ -23,7 +23,8 @@ function NavBar() {
           component="div"
           sx={{ flexGrow: 1, fontSize: "2.5rem" }}
         >
-          <b>SAI INTERIORS</b>
+          <b>SAI</b>
+          <b> INTERIORS</b>
         </Typography>
         <Box
           sx={{
