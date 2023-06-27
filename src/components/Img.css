@@ -1,0 +1,7 @@
+.img:hover {
+    filter: brightness(0.1);
+}
+
+.imgapp:hover {
+    filter: brightness(0.1);
+}
