@@ -1,5 +1,4 @@
 import * as React from "react";
-import img from "../Images/plast.jpg";
 import { useRef, useState, useEffect } from "react";
 import {
   Card,
@@ -47,7 +46,7 @@ function Itemcard(props) {
             padding: "0.2rem",
             display: "flex",
             flexDirection: "column",
-            backgroundColor: "#231c14",
+            backgroundColor: "#dfe4e2",
             position: "relative",
             alignItems: "center",
             justifyContent: "center",

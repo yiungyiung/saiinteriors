@@ -12,6 +12,7 @@ import {
 } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/Email";
+import MapIcon from '@mui/icons-material/Map';
 function Contact() {
   return (
     <>
@@ -33,7 +34,7 @@ function Contact() {
           />
         </Box>
         <Grid container>
-          <Grid mt="2rem" item xs={12} md={6} sm={12} lg={6} xl={6}>
+          <Grid mt="2rem" item xs={12} md={4} sm={12} lg={4} xl={4}>
             <Box
               mt="0.3rem"
               sx={{
@@ -50,7 +51,25 @@ function Contact() {
               </Typography>
             </Box>
           </Grid>
-          <Grid mt="2rem" item xs={12} md={6} sm={12} lg={6} xl={6}>
+          <Grid mt="2rem" item xs={12} md={4} sm={12} lg={4} xl={4}>
+            <Box
+              mt="0.3rem"
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "column",
+                alignItems: "center",
+                width: "auto",
+              }}
+            >
+              <Typography variant="h3">Address</Typography>
+              <Typography mt="1rem" variant="h5" align="center">
+              Sarita Vaibhav, Sinhagad Road, Pune 411030, India
+
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid mt="2rem" item xs={12} md={4} sm={12} lg={4} xl={4}>
             <Box
               mt="0.3rem"
               sx={{
@@ -63,13 +82,13 @@ function Contact() {
             >
               <Typography variant="h3">Phone</Typography>
               <Typography mt="1rem" variant="h5">
-                Mob:9890903027
+                Mob: +91-9890903027
               </Typography>
-              <Typography variant="h5">Tel:(020) 41305177</Typography>
+              <Typography variant="h5">Tel: (020) 41305177</Typography>
             </Box>
           </Grid>
         </Grid>
-        <Box>
+        <Box mt = "5rem" >
           <Typography variant="h4">Connect With Us</Typography>
           <Box
             sx={{
@@ -93,6 +112,12 @@ function Contact() {
               style={{ color: "#dfe4e2", fontSize: "2rem" }}
             >
               <EmailIcon fontSize="1rem" />
+            </IconButton>
+            <IconButton
+              onClick={() => window.open("mailto:saihomedecor09@gmail.com")}
+              style={{ color: "#dfe4e2", fontSize: "2rem" }}
+            >
+              <MapIcon fontSize="1rem" />
             </IconButton>
           </Box>
         </Box>

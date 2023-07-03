@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useRef, useState, useEffect } from "react";
+import styled from 'styled-components'
 import {
   Card,
   CardActions,
@@ -12,10 +13,10 @@ import {
   Paper,
   Toolbar,
 } from "@mui/material";
-import img from "../Images/plast.jpg";
-import "./Img.css"
+//import "./Img.css"
 function Itemcard(props) {
   const [screenSize, setScreenSize] = useState(30);
+  const [isButtonHovered, setIsButtonHovered] = useState(false);
   useEffect(() => {
     const handleResize = () => {
       const { innerWidth } = window;
@@ -45,7 +46,7 @@ function Itemcard(props) {
             padding: "0.1rem",
             display: "flex",
             flexDirection: "column",
-            backgroundColor: "#231c14",
+            backgroundColor:"#dfe4e2",
             position: "relative",
             alignItems: "center",
             justifyContent: "center",
@@ -63,13 +64,16 @@ function Itemcard(props) {
             > 
             <a href={props.link}>
               <img
-              className="img"
+              onMouseEnter={() => setIsButtonHovered(true)}
+              onMouseLeave={() => setIsButtonHovered(false)}
+              className={`${isButtonHovered ? 'darkenimg' : 'img'}`}
                 style={{
                   borderRadius: "0.8rem",
                   width: `${props.sz / screenSize}em`,
                   height: `${props.sz / screenSize}em`,
+
                 }}
-                src={"/kitchen/1.jpg"}
+                src={props.img}
                 
               />
               </a>
@@ -84,18 +88,21 @@ function Itemcard(props) {
                 }}
               >
                 <Button
+                onMouseEnter={() => setIsButtonHovered(true)}
+                onMouseLeave={() => setIsButtonHovered(false)}
+                className={`${isButtonHovered ? 'darken' : ''}`}
                   href={props.link}
                   sx={{
                     color: "#dfe4e2",
                     ":hover": {
-                      backgroundColor: "#dfe4e2",
-                      color: "#c38f24",
+                      backgroundColor: "black",
+                      color: "#dfe4e2",
                       borderColor: "#c38f24",
                       border: "0.2rem solid",
                     },
                   }}
                 >
-                  <Typography variant="h6">
+                  <Typography variant="h4">
                     <b>{props.name}</b>
                   </Typography>
                 </Button>

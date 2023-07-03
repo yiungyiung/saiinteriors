@@ -2,6 +2,17 @@
     filter: brightness(0.1);
 }
 
-.imgapp:hover {
+.darkenimg {
     filter: brightness(0.1);
+}
+
+.darken {
+    background-color: "black";
+    color: "#dfe4e2";
+    border-color: "#c38f24";
+    border: "0.2rem solid";
+}
+
+.but {
+    color: "#dfe4e2",
 }

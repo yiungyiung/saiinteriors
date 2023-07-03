@@ -4,6 +4,8 @@ import BotNav from "./components/BotNav";
 import Contact from "./components/Contact";
 import Home from "./Pages/Home";
 import Kitchen from "./Pages/Kitchen";
+import War from "./Pages/Wardrobe";
+import Tvu from "./Pages/TVUNIT";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Itemcard from "./components/Itemcard";
@@ -40,6 +42,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/kitchen" element={<Kitchen />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/wardrobe" element={<War />} />
+            <Route path="/tvunit" element={<Tvu />} />
           </Routes>
         </BrowserRouter>
       </Box>

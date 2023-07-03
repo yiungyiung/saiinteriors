@@ -10,10 +10,9 @@ import {
   Button,
   Divider,
 } from "@mui/material";
-import image from "../Images/plast.jpg";
 
 function BotNav() {
-  const [screenSize, setScreenSize] = useState(30);
+  const [screenSize, setScreenSize] = useState("horizontal");
   useEffect(() => {
     const handleResize = () => {
       const { innerWidth } = window;
@@ -58,7 +57,7 @@ function BotNav() {
       >
         <Typography margin="1rem" variant="h5">
           SAI INTERIORS
-          <Divider sx={{ backgroundColor: "#dfe4e2" }} />
+          <Divider orientation="horizontal" sx={{ backgroundColor: "#dfe4e2" }} />
         </Typography>
 
         <Box
