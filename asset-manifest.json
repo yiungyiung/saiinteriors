@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/saiinteriors/static/css/main.0e9cf065.css",
-    "main.js": "/saiinteriors/static/js/main.562edf53.js",
-    "static/media/wook.jpg": "/saiinteriors/static/media/wook.db8d4d7698656eb1712f.jpg",
-    "static/media/9.png": "/saiinteriors/static/media/9.88b5a1a67450d99f2e25.png",
-    "index.html": "/saiinteriors/index.html",
-    "main.0e9cf065.css.map": "/saiinteriors/static/css/main.0e9cf065.css.map",
-    "main.562edf53.js.map": "/saiinteriors/static/js/main.562edf53.js.map"
+    "main.css": "/static/css/main.025df795.css",
+    "main.js": "/static/js/main.2678aacb.js",
+    "static/media/wook.jpg": "/static/media/wook.db8d4d7698656eb1712f.jpg",
+    "static/media/9.png": "/static/media/9.88b5a1a67450d99f2e25.png",
+    "index.html": "/index.html",
+    "main.025df795.css.map": "/static/css/main.025df795.css.map",
+    "main.2678aacb.js.map": "/static/js/main.2678aacb.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e9cf065.css",
-    "static/js/main.562edf53.js"
+    "static/css/main.025df795.css",
+    "static/js/main.2678aacb.js"
   ]
 }
